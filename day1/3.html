@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			html,body{
+				height: 100%;
+			}
+			body{
+				position: relative;
+				padding-top: 50px;
+				padding-bottom: 50px;
+				box-sizing: border-box;
+			}
+			header{
+				width: 100%;
+				height: 50px;
+				position: fixed;
+				top: 0;
+				background: skyblue;
+				line-height: 50px;
+				text-align: center;
+				color: #fff;
+				font-size: 16px;
+			}
+			img{
+				width: 60px;
+			}
+			main{
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+			}
+			ul{
+				width: 100%;
+				height: 100%;
+			}
+			ul li{
+				position: relative;
+				padding: 14px;
+				border-bottom: 1px solid #bbb;
+			}
+			ul .hhh{
+				position: absolute;
+				top: 5px;
+				left: 10px;
+				padding-left: 80px;
+				padding-right: 100px;
+				box-sizing: border-box;
+				width: 100%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+				.hhh h3{
+					font-size: 16px;
+					margin-top: 7px;
+				}
+				.hhh b{
+					font-size: 12px;
+					line-height:0;
+				}
+				.hhh span{
+					display: block;
+					font-size: 12px;
+					color: #999;
+				}
+			ul>li>.right{
+				position: absolute;
+				right: 20px;
+				top: 50%;
+				transform: translateY(-60%);
+				color: skyblue;
+				font-size: 14px;
+			}
+			ul li:nth-of-type(1)::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			ul li:nth-of-type(1) p{
+				font-size: 14px;
+				color: #999;
+				display: inline-block;
+				float: left;
+				line-height: 24px;
+			}
+			ul li:nth-of-type(1) span{
+				display: inline-block;
+				float: right;
+				width: 80px;
+				height: 24px;
+				background: #ddd;
+				text-align: center;
+				font-size: 14px;
+				line-height: 24px;
+				color: skyblue;
+				border-radius: 6px;
+				margin-right: 5px;
+			}
+			footer{
+				width: 100%;
+				height: 50px;
+				position: fixed;
+				bottom: 0;
+				background: #eee;
+			}
+				.foot_box{
+					width: 33.33%;
+					float: left;
+					position: relative;
+					height: 100%;
+				}
+				.foot_box span{
+					display: inline-block;
+					width: 18px;
+					height: 17px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-200%,-50%);
+				}
+				.foot_box p{
+					font-size: 15px;
+					display: inline-block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					color: #555;
+					transform: translate(-40%,-50%);
+				}
+				.foot_box:nth-of-type(1) span{
+					background: url(img/icon2.png) no-repeat -32px -20.5px;
+					background-size: 250px 250px;
+				}
+				.foot_box:nth-of-type(2) span{
+					background: url(img/icon2.png) no-repeat -14px -2.5px;
+					background-size: 250px 250px;
+				}
+				.foot_box:nth-of-type(3) span{
+					background: url(img/icon2.png) no-repeat -52.5px -2px;
+					background-size: 250px 250px;
+				}
+		</style>
+	</head>
+	<body>
+		<header>拉勾网</header>
+		<main>
+			<ul>
+				<li>
+					<p>10秒钟定制职位</p>
+					<span>登录</span>
+				</li>
+				<li>
+					<img src="img/1.png" alt=""/>
+					<div class="hhh">
+						<h3>科技公司</h3>
+						<b>职位：前端工程师 工作地点：长沙</b>
+						<span>发布时间：今天15:15</span>
+					</div>
+					<span class="right">8k-16k</span>
+				</li>
+				<li>
+					<img src="img/1.png" alt=""/>
+					<div class="hhh">
+						<h3>科技公司</h3>
+						<b>职位：前端工程师 工作地点：长沙</b>
+						<span>发布时间：今天15:15</span>
+					</div>
+					<span class="right">8k-16k</span>
+				</li>
+				<li>
+					<img src="img/1.png" alt=""/>
+					<div class="hhh">
+						<h3>科技公司</h3>
+						<b>职位：前端工程师 工作地点：长沙</b>
+						<span>发布时间：今天15:15</span>
+					</div>
+					<span class="right">8k-16k</span>
+				</li>
+				<li>
+					<img src="img/1.png" alt=""/>
+					<div class="hhh">
+						<h3>科技公司</h3>
+						<b>职位：前端工程师 工作地点：长沙</b>
+						<span>发布时间：今天15:15</span>
+					</div>
+					<span class="right">8k-16k</span>
+				</li>
+				<li>
+					<img src="img/1.png" alt=""/>
+					<div class="hhh">
+						<h3>科技公司</h3>
+						<b>职位：前端工程师 工作地点：长沙</b>
+						<span>发布时间：今天15:15</span>
+					</div>
+					<span class="right">8k-16k</span>
+				</li>
+				<li>
+					<img src="img/1.png" alt=""/>
+					<div class="hhh">
+						<h3>科技公司</h3>
+						<b>职位：前端工程师 工作地点：长沙</b>
+						<span>发布时间：今天15:15</span>
+					</div>
+					<span class="right">8k-16k</span>
+				</li>
+				<li>
+					<img src="img/1.png" alt=""/>
+					<div class="hhh">
+						<h3>科技公司</h3>
+						<b>职位：前端工程师 工作地点：长沙</b>
+						<span>发布时间：今天15:15</span>
+					</div>
+					<span class="right">8k-16k</span>
+				</li>
+				<li>
+					<img src="img/1.png" alt=""/>
+					<div class="hhh">
+						<h3>科技公司</h3>
+						<b>职位：前端工程师 工作地点：长沙</b>
+						<span>发布时间：今天15:15</span>
+					</div>
+					<span class="right">8k-16k</span>
+				</li>
+				<li>
+					<img src="img/1.png" alt=""/>
+					<div class="hhh">
+						<h3>科技公司</h3>
+						<b>职位：前端工程师 工作地点：长沙</b>
+						<span>发布时间：今天15:15</span>
+					</div>
+					<span class="right">8k-16k</span>
+				</li>
+				<li>
+					<img src="img/1.png" alt=""/>
+					<div class="hhh">
+						<h3>科技公司</h3>
+						<b>职位：前端工程师 工作地点：长沙</b>
+						<span>发布时间：今天15:15</span>
+					</div>
+					<span class="right">8k-16k</span>
+				</li>
+				<li>
+					<img src="img/1.png" alt=""/>
+					<div class="hhh">
+						<h3>科技公司</h3>
+						<b>职位：前端工程师 工作地点：长沙</b>
+						<span>发布时间：今天15:15</span>
+					</div>
+					<span class="right">8k-16k</span>
+				</li>
+				<li>
+					<img src="img/1.png" alt=""/>
+					<div class="hhh">
+						<h3>科技公司</h3>
+						<b>职位：前端工程师 工作地点：长沙</b>
+						<span>发布时间：今天15:15</span>
+					</div>
+					<span class="right">8k-16k</span>
+				</li>
+			</ul>
+		</main>
+		<footer>
+			<div class="foot_box">
+				<span></span>
+				<p>职位</p>
+			</div>
+			<div class="foot_box">
+				<span></span>
+				<p>搜索</p>
+			</div>
+			<div class="foot_box">
+				<span></span>
+				<p>我的</p>
+			</div>
+		</footer>
+	</body>
+</html>

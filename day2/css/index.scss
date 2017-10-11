@@ -1,0 +1,44 @@
+$sc:25;
+@mixin pst(){
+    position: fixed;
+}
+html{
+    width: 100%;
+    height: 100%;
+    body{
+        margin: 0;
+        @extend html;
+        padding-bottom: 50/$sc+rem;
+        padding-top: (50+234.375)/$sc+rem;
+        header{
+            width: 100%;
+            height: 50/$sc+rem;
+            background: skyblue;
+            @include pst;
+            top: 0;
+        }
+        .banner{
+            img{
+                width: 100%;
+                @include pst;
+                top: 50/$sc+rem;
+            }
+        }
+        section{
+            @extend html;
+            overflow-y: auto;
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+        }
+        footer{
+            width: 100%;
+            height: 50/$sc+rem;
+            background: #ddd;
+            @include pst;
+            bottom: 0;
+        }
+    }
+}
